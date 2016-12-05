@@ -14,10 +14,10 @@ namespace Greenery
     public interface IService1
     {
         [OperationContract]
-        void AddGreeneryData(GreeneryDb greeneryDb);
+        void AddGreeneryData(Greenery greeneryDb);
 
         [OperationContract]
-        List<GreeneryDb> GetAllData();
+        List<Greenery> GetAllData();
 
         //[OperationContract]
         //List<GreeneryDb> ();

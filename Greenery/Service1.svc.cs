@@ -17,13 +17,13 @@ namespace Greenery
     {
         GreeneryEntityModel em = new GreeneryEntityModel();
 
-        public void AddGreeneryData(GreeneryDb greenery)
+        public void AddGreeneryData(Greenery greenery)
         {
             em.Greeneries.Add(greenery);
             em.SaveChanges();
         }
 
-        public List<GreeneryDb> GetAllData()
+        public List<Greenery> GetAllData()
         {
             return em.Greeneries.ToList();
         }
