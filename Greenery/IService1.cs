@@ -15,6 +15,7 @@ namespace Greenery
 
         [OperationContract]
         string GetData(int value);
+        //
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
@@ -22,7 +23,7 @@ namespace Greenery
         // TODO: Add your service operations here
     }
 
-
+    //tthis is a test
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
     [DataContract]
     public class CompositeType
