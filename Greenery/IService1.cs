@@ -14,9 +14,15 @@ namespace Greenery
     public interface IService1
     {
         [OperationContract]
+        [WebInvoke(Method = "POST",
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Bare, UriTemplate = "greenery/")]
         void AddGreeneryData(Greenery greeneryDb);
 
         [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json,
+             UriTemplate = "greenery/")]
         List<Greenery> GetAllData();
 
         //[OperationContract]
