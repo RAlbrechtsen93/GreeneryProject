@@ -24,8 +24,5 @@ namespace Greenery
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json,
              UriTemplate = "greenery/")]
         List<Greenery> GetAllData();
-
-        //[OperationContract]
-        //List<GreeneryDb> ();
     }
 }
